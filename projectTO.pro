@@ -13,13 +13,15 @@ SOURCES += \
     RB.cpp \
     RC.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    rutas.cpp
 
 HEADERS += \
     RA.h \
     RB.h \
     RC.h \
-    mainwindow.h
+    mainwindow.h \
+    rutas.h
 
 FORMS += \
     RA.ui \

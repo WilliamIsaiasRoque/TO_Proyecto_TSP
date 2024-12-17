@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -20,22 +21,38 @@ QT_BEGIN_NAMESPACE
 class Ui_RB
 {
 public:
-    QPushButton *pushButton;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
     QLabel *label;
+    QLabel *rutaB;
+    QPushButton *pb1;
 
     void setupUi(QWidget *RB)
     {
         if (RB->objectName().isEmpty())
             RB->setObjectName("RB");
-        RB->resize(549, 655);
-        pushButton = new QPushButton(RB);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(220, 60, 75, 24));
-        label = new QLabel(RB);
+        RB->resize(745, 652);
+        verticalLayoutWidget = new QWidget(RB);
+        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
+        verticalLayoutWidget->setGeometry(QRect(0, 70, 741, 581));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(verticalLayoutWidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 100, 531, 491));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/images/images/RB_C1.jpg")));
         label->setScaledContents(true);
+
+        verticalLayout->addWidget(label);
+
+        rutaB = new QLabel(verticalLayoutWidget);
+        rutaB->setObjectName("rutaB");
+        rutaB->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(rutaB);
+
+        pb1 = new QPushButton(RB);
+        pb1->setObjectName("pb1");
+        pb1->setGeometry(QRect(290, 20, 201, 24));
 
         retranslateUi(RB);
 
@@ -45,8 +62,9 @@ public:
     void retranslateUi(QWidget *RB)
     {
         RB->setWindowTitle(QCoreApplication::translate("RB", "Form", nullptr));
-        pushButton->setText(QCoreApplication::translate("RB", "RB_C1", nullptr));
         label->setText(QString());
+        rutaB->setText(QString());
+        pb1->setText(QCoreApplication::translate("RB", "RB_C1", nullptr));
     } // retranslateUi
 
 };

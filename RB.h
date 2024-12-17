@@ -13,6 +13,8 @@ class RB : public QWidget
 
 public:
     explicit RB(QWidget *parent = nullptr);
+
+    void mostrarImagenC1();
     ~RB();
 
 private:

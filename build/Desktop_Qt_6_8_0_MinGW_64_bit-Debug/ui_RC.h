@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -20,26 +22,54 @@ QT_BEGIN_NAMESPACE
 class Ui_RC
 {
 public:
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
     QPushButton *rc1;
     QPushButton *rc2;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
     QLabel *label;
+    QLabel *rutaC;
 
     void setupUi(QWidget *RC)
     {
         if (RC->objectName().isEmpty())
             RC->setObjectName("RC");
-        RC->resize(586, 689);
-        rc1 = new QPushButton(RC);
+        RC->resize(745, 652);
+        horizontalLayoutWidget = new QWidget(RC);
+        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
+        horizontalLayoutWidget->setGeometry(QRect(230, 10, 301, 81));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        rc1 = new QPushButton(horizontalLayoutWidget);
         rc1->setObjectName("rc1");
-        rc1->setGeometry(QRect(120, 60, 75, 24));
-        rc2 = new QPushButton(RC);
+
+        horizontalLayout->addWidget(rc1);
+
+        rc2 = new QPushButton(horizontalLayoutWidget);
         rc2->setObjectName("rc2");
-        rc2->setGeometry(QRect(360, 60, 75, 24));
-        label = new QLabel(RC);
+
+        horizontalLayout->addWidget(rc2);
+
+        verticalLayoutWidget = new QWidget(RC);
+        verticalLayoutWidget->setObjectName("verticalLayoutWidget");
+        verticalLayoutWidget->setGeometry(QRect(0, 100, 741, 551));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(verticalLayoutWidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(10, 110, 561, 491));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/images/images/RC_C1.jpg")));
         label->setScaledContents(true);
+
+        verticalLayout->addWidget(label);
+
+        rutaC = new QLabel(verticalLayoutWidget);
+        rutaC->setObjectName("rutaC");
+        rutaC->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout->addWidget(rutaC);
+
 
         retranslateUi(RC);
 
@@ -52,6 +82,7 @@ public:
         rc1->setText(QCoreApplication::translate("RC", "RC_C1", nullptr));
         rc2->setText(QCoreApplication::translate("RC", "RC_C2", nullptr));
         label->setText(QString());
+        rutaC->setText(QString());
     } // retranslateUi
 
 };
