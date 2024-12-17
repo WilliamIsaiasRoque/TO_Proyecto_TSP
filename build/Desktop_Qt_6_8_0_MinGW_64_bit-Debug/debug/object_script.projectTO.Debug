@@ -1,0 +1,10 @@
+debug/RA.o
+debug/RB.o
+debug/RC.o
+debug/main.o
+debug/mainwindow.o
+debug/qrc_resources.o
+debug/moc_RA.o
+debug/moc_RB.o
+debug/moc_RC.o
+debug/moc_mainwindow.o
