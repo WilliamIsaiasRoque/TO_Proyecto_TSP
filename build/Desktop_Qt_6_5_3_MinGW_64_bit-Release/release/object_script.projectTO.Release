@@ -1,0 +1,10 @@
+release/RA.o
+release/RB.o
+release/RC.o
+release/main.o
+release/mainwindow.o
+release/qrc_resources.o
+release/moc_RA.o
+release/moc_RB.o
+release/moc_RC.o
+release/moc_mainwindow.o
