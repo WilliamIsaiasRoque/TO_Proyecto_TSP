@@ -92,11 +92,11 @@ QString resolverYmostrar(const Ruta& ruta) {
     using namespace std::chrono;
     std::ostringstream output;
 
-    // Medición del tiempo
+    // Medición del tiempo en microsegundos
     auto startVMC = high_resolution_clock::now();
     vector<int> mejorRutaVMC = resolverTSPVecinoMasCercano(ruta.distancias);
     auto endVMC = high_resolution_clock::now();
-    auto duracionVMC = duration_cast<milliseconds>(endVMC - startVMC).count();
+    auto duracionVMC = duration_cast<microseconds>(endVMC - startVMC).count();
 
     // Cálculo de la distancia total
     int distTotalVMC = calcDistTotal(mejorRutaVMC, ruta.distancias);
@@ -110,7 +110,7 @@ QString resolverYmostrar(const Ruta& ruta) {
     }
     output << "(" << mejorRutaVMC.back() + 1 << ")\n";
     output << "Distancia total: " << distTotalVMC << " m\n";
-    output << "Tiempo de ejecución: " << duracionVMC << " ms\n";
+    output << "Tiempo de ejecución: " << duracionVMC << " microsegundos\n";
 
     // Convertimos el resultado a QString
     return QString::fromStdString(output.str());
