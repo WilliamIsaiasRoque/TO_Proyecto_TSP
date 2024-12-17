@@ -53,6 +53,7 @@ void RA::mostrarImagenC1()
     // Mostrar resultados en QLabel
     QString textoRuta = resolverYmostrar(rutaACamion1);
     ui->rutaA->setText(textoRuta);
+    ui->rutaA->setWordWrap(true);
 
 }
 
@@ -66,4 +67,5 @@ void RA::mostrarImagenC2()
     // Mostrar resultados en QLabel
     QString textoRuta = resolverYmostrar(rutaACamion2);
     ui->rutaA->setText(textoRuta);
+    ui->rutaA->setWordWrap(true);
 }

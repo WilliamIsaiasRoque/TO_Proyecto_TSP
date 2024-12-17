@@ -5,8 +5,9 @@
         <file>images/RB.jpg</file>
         <file>images/RC_C2.jpg</file>
         <file>images/RA_C1.jpg</file>
-        <file>images/RA_C2.jpg</file>
         <file>images/RB_C1.jpg</file>
         <file>images/RC_C1.jpg</file>
+        <file>images/logo.jpg</file>
+        <file>images/RA_C2.jpg</file>
     </qresource>
 </RCC>

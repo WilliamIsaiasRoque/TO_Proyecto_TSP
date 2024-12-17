@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     // Imagen inicial opcional
-    QPixmap initialImage(":/images/images/Ra.jpg");
+    QPixmap initialImage(":/images/images/logo.jpg");
     ui->label->setPixmap(initialImage);
     ui->label->setScaledContents(true);
 

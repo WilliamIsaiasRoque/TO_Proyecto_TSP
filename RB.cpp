@@ -45,4 +45,5 @@ void RB::mostrarImagenC1()
     // Mostrar resultados en QLabel
     QString textoRuta = resolverYmostrar(rutaBCamion1);
     ui->rutaB->setText(textoRuta);
+    ui->rutaB->setWordWrap(true);
 }

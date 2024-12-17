@@ -109,7 +109,7 @@ QString resolverYmostrar(const Ruta& ruta) {
                << " -> ";
     }
     output << "(" << mejorRutaVMC.back() + 1 << ")\n";
-    output << "Distancia total: " << distTotalVMC << " km\n";
+    output << "Distancia total: " << distTotalVMC << " m\n";
     output << "Tiempo de ejecución: " << duracionVMC << " ms\n";
 
     // Convertimos el resultado a QString

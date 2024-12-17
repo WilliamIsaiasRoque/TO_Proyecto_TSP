@@ -59,7 +59,7 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(30, 100, 581, 521));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/images/images/RA.jpg")));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/images/images/logo.jpg")));
         label->setScaledContents(true);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
