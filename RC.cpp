@@ -3,45 +3,45 @@
 #include "rutas.h"
 
 Ruta rutaCCamion1("Ruta C - Camion 1", {
-                                           {0, 39,  INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 0
-                                           {39, 0,  450, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 1
-                                           {INF, 450, 0,  143, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 2
-                                           {INF, INF, 143, 0,  1142, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 3
-                                           {INF, INF, INF, 1142, 0, 401, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 449, INF, INF}, // Nodo 4
-                                           {INF, INF, INF, INF, 401, 0, 394, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 5
-                                           {INF, INF, INF, INF, INF, 394, 0, 182, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 6
-                                           {INF, INF, INF, INF, INF, INF, 182, 0, 128, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 7
-                                           {INF, INF, INF, INF, INF, INF, INF, 128, 0, 85, INF, INF, INF, INF, INF, INF, INF, INF, INF},   // Nodo 8
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, 85, 0, 209, INF, INF, INF, INF, INF, INF, INF, INF},   // Nodo 9
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, 209, 0, 111, INF, INF, INF, INF, INF, INF, INF},  // Nodo 10
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 111, 0, 289, INF, INF, INF, INF, INF, INF},  // Nodo 11
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 289, 0, 216, INF, INF, INF, INF, INF},  // Nodo 12
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 216, 0, 122, INF, INF, INF, INF},  // Nodo 13
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 122, 0, 250, INF, INF, INF},  // Nodo 14
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 250, 0, 356, INF, INF},  // Nodo 15
-                                           {INF, INF, INF, INF, 449, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 356, 0, 481, INF},  // Nodo 16
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 263, INF, INF, 84, 0, INF},   // Nodo 17
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 481, 0}   // Nodo 18
+                                           {0,   39,  INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 2223}, // Nodo 1
+                                           {39,  0,   450, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 2
+                                           {INF, 450, 0,   143, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 3
+                                           {INF, INF, 143, 0,   1142, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 4
+                                           {INF, INF, INF, 1142, 0,   401, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 449, INF, INF}, // Nodo 5
+                                           {INF, INF, INF, INF, 401, 0,   394, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 449},  // Nodo 6
+                                           {INF, INF, INF, INF, INF, 394, 0,   182, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 7
+                                           {INF, INF, INF, INF, INF, INF, 182, 0,   128, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 8
+                                           {INF, INF, INF, INF, INF, INF, INF, 128, 0,   85,  INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 9
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, 85,  0,   209, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 10
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, 209, 0,   111, INF, INF, INF, INF, INF, INF, INF},  // Nodo 11
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 111, 0,   289, INF, INF, INF, INF, INF, INF},  // Nodo 12
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 289, 0,   216, INF, INF, INF, INF, INF},  // Nodo 13
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 216, 0,   122, INF, INF, INF, INF},  // Nodo 14
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 122, 0,   250, 263, INF, INF},  // Nodo 15
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 250, 0,   289, 356, INF},  // Nodo 16
+                                           {INF, INF, INF, INF, 449, INF, INF, INF, INF, INF, INF, INF, INF, INF, 263, 289, 0,   84,  INF},  // Nodo 17
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 356, 84,  0,   481},  // Nodo 18
+                                           {2223, INF, INF, INF, INF, 449, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 481, 0}    // Nodo 19
                                        });
 
 Ruta rutaCCamion2("Ruta C - Camion 2", {
-                                           {0, 155, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 1
-                                           {INF, 0, 413, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 2
-                                           {INF, INF, 0, 1635, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 3
-                                           {INF, INF, 1635, 0, 979, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 134}, // Nodo 4
-                                           {INF, INF, INF, INF, 0, 341, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 5
-                                           {INF, INF, INF, INF, INF, 0, 395, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 6
-                                           {INF, INF, INF, INF, INF, INF, 0, 170, INF, INF, INF, INF, INF, INF, INF, INF, INF},  // Nodo 7
-                                           {INF, INF, INF, INF, INF, INF, INF, 0, 308, INF, INF, 202, INF, INF, INF, INF, INF},  // Nodo 8
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, 0, 516, INF, INF, INF, INF, INF, INF, INF},  // Nodo 9
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 284, INF, INF, INF, INF, INF, INF},  // Nodo 10
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 153, INF, INF, INF, INF, INF},  // Nodo 11
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 294, INF, INF, INF, INF},  // Nodo 12
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 304, INF, INF, INF},  // Nodo 13
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 421, INF, INF},  // Nodo 14
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 446, INF},  // Nodo 15
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0, 250},  // Nodo 16
-                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 0}   // Nodo 17
+                                           {0,   155, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 2337}, // Nodo 1
+                                           {155, 0,   413, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 2
+                                           {INF, 413, 0,   1635, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 3
+                                           {INF, INF, 1635, 0,   134,  INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 4
+                                           {INF, INF, INF, 134,  0,   341, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 5
+                                           {INF, INF, INF, INF, 341, 0,   395, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 6
+                                           {INF, INF, INF, INF, INF, 395, 0,   252, INF, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 7
+                                           {INF, INF, INF, INF, INF, INF, 252, 0,   170, INF, INF, INF, INF, INF, INF, INF, INF}, // Nodo 8
+                                           {INF, INF, INF, INF, INF, INF, INF, 170, 0,   516, INF, INF, INF, INF, INF, INF, INF}, // Nodo 9
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, 516, 0,   284, INF, INF, INF, INF, INF, INF}, // Nodo 10
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, 284, 0,   153, INF, INF, INF, INF, INF}, // Nodo 11
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 153, 0,   294, INF, INF, INF, INF}, // Nodo 12
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 294, 0,   304, INF, INF, INF}, // Nodo 13
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 304, 0,   421, INF, INF}, // Nodo 14
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 421, 0,   446, INF}, // Nodo 15
+                                           {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 446, 0,   250}, // Nodo 16
+                                           {2337, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 250, 0}  // Nodo 17
                                        });
 
 RC::RC(QWidget *parent)
